@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>AngularFirebaseLoginDemo</title>
@@ -8,7 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDrS5PYvnwvXaEb59ehtu_wuOd9iTZkR7M",
+      authDomain: "angular-firebase-login-demo.firebaseapp.com",
+      databaseURL: "https://angular-firebase-login-demo.firebaseio.com",
+      projectId: "angular-firebase-login-demo",
+      storageBucket: "angular-firebase-login-demo.appspot.com",
+      messagingSenderId: "102337937248"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
+
 </html>
